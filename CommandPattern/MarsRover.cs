@@ -1,11 +1,11 @@
 ﻿ namespace CommandPattern {
      public class MarsRover {
-        private int _x;
-        private int _y;
+         public int _x;
+         public int _y;
         public char _direction;
         public readonly string _availableDirections = "NESW";
-        private readonly string[] _obstacles;
-        private bool _obstacleFound;
+        public readonly string[] _obstacles;
+        public bool _obstacleFound;
         private readonly ObstacleHandler obstacleHandler;
         private readonly DirectionHandler directionHandler;
 
