@@ -1,13 +1,13 @@
 ﻿namespace CommandPattern;
 
-public class ObstacleHandler {
+public class ObstacleHandler : IExecute {
     private MarsRover marsRover;
 
     public ObstacleHandler(MarsRover marsRover) {
         this.marsRover = marsRover;
     }
 
-    public void CheckObstacles() {
+    public void IExecute() {
         switch (marsRover._direction) {
             case 'E':
                 marsRover._obstacleFound = marsRover._obstacles.Contains($"{marsRover._x + 1}:{marsRover._y}");

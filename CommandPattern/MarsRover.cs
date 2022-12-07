@@ -25,7 +25,7 @@
         public void Execute(string commands) {
             foreach (char command in commands) {
                 if (command == 'M') {
-                    obstacleHandler.CheckObstacles();
+                    obstacleHandler.IExecute();
                 }
                 else if (command == 'L') {
                     // get new direction
